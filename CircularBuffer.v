@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//Implementation of a circular buffer data structure
+//Description: Implementation of a circular buffer data structure
 //dataOut1 is equal to input and dataOut2 is delayed version of input 
 //Lower resetn => clear buffer, clear output data lines, reset both addresses to 0
 //Raise resetn, keep enable low => Output data lines retain current values, buffer retains current values, addresses retain current values
