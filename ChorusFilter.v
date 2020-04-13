@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-#Description: Takes an audio signal as input, and outputs the same signal with a chorus filter applied to it
+//Description: Takes an audio signal as input, and outputs the same signal with a chorus filter applied to it
 module ChorusFilter(input clk, input resetn, input enable,  input[15:0] dataIn, output [15:0] dataOut);
        wire[15:0] dataOut1;
        wire[15:0] dataOut2;
