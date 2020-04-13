@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-#Acts as a sinusoidal function, storing "size" number of entries in BRAM
+//Description: Behaves as a sinusoidal function, storing "size" number of entries in BRAM
 module SineLUT (input clk, input resetn, input enable, output [15:0] data);
     parameter size = 44100;
     reg [15:0] addrCounter = 16'b0;
