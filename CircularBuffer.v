@@ -1,9 +1,4 @@
 `timescale 1ns / 1ps
-//Description: Implementation of a circular buffer data structure
-//dataOut1 is equal to input and dataOut2 is delayed version of input 
-//Lower resetn => clear buffer, clear output data lines, reset both addresses to 0
-//Raise resetn, keep enable low => Output data lines retain current values, buffer retains current values, addresses retain current values
-//Raise resetn and enable => On next clock edge, output data lines will have data from buffer from addresses at address ports, read/write pointers will update, buffer will read in current value on data in line
 module CircularBuffer(clk, resetn, dataIn, dataOut1, dataOut2, delay, enable);
     parameter bufferSize = 44100;
     input clk;
